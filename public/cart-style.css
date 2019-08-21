@@ -1,0 +1,67 @@
+#cart-app {
+  font-family: 'Arial';
+  width: 244px;
+  height: 650px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  float: left;
+  margin-right: -244px;
+  padding: 15px;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+#cart-price {
+  color: #B12704!important;
+  font-size: 17px!important;
+  margin-bottom: 5px;
+}
+
+#cart-prime {
+  line-height: 19px;
+  vertical-align: top;
+  margin-left: -2px;
+}
+
+#cart-logo {
+  vertical-align: middle;
+}
+
+#cart-shazam {
+  color: #41a1dd;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+#cart-oneday {
+  color: #555;
+  vertical-align: middle;
+}
+
+#cart-shipping {
+  margin-top: 20px;
+}
+
+.cart-fakelink {
+  color: #1c50b2;
+  cursor: pointer;
+}
+
+.cart-fakelink:hover {
+  text-decoration: underline;
+}
+
+#cart-location {
+  margin-top: 10px;
+  margin-left: -2px;
+}
+
+#cart-pin {
+  vertical-align: middle;
+}
+
+#cart-stock {
+  margin-top: 20px;
+  font-size: 17px!important;
+  color: #2d6615;
+}
