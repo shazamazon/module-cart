@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Price from './Price.jsx';
+import Purchase from './Purchase.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -10,9 +11,11 @@ class App extends React.Component {
 
   render() {
     return (
+      <div>
       <Price />
-
-    )
+      <Purchase />
+      </div>
+    );
   }
 }
 
