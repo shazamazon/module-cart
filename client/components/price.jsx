@@ -9,12 +9,8 @@ const Price = (props) => (
       <span id="cart-oneday"> FREE Instant-Shipping</span>
     </div>
     <div id="cart-shipping">
-      <span>FREE Delivery <b>NOW</b>
-      <br></br>
-      If you order at anytime.
-      <br></br>
+      <span>Get FREE delivery <b>NOW</b> if you order $35 of qualifying items and choose this date at checkout. </span>
       <span className="cart-fakelink">Details</span>
-      </span>
     </div>
     <div id="cart-location">
       <img id="cart-pin" src="./images/droppin.png"></img>

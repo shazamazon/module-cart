@@ -20,25 +20,32 @@ const Purchase = (props) => (
     <div id="cart-add">
       <button id="cart-btn-add">
         <img id="cart-cart" src="./images/cart.png"></img>
-        <span id="cart-add-text">Add to Cart</span></button>
+        <span id="cart-add-text">Add to Cart</span>
+      </button>
     </div>
     <div id="cart-soldby">
-
+      <span>Sold by </span>
+      <span className="cart-fakelink">Wizards 'R' Us</span>
+      <span> and fulfilled by </span>
+      <span className="cart-fakelink">Shazamazon</span>
+      <span>.</span>
     </div>
     <div className="cart-separator">
-
+      <span className="cart-line">--------------<span className="cart-oneclick"> or 1-Click Checkout </span>--------------</span>
     </div>
     <div id="cart-oneclick">
-
-    </div>
-    <div id="cart-orderby">
-
+      <button id="cart-btn-oneclick">
+        <img id="cart-click" src="./images/oneclick.png"></img>
+        <span id="cart-click-text">Buy now with 1-Click</span>
+      </button>
     </div>
     <div id="cart-gift">
-
+      <input type="checkbox"></input><span>  This is a gift.</span>
     </div>
     <div className="cart-separator">
-
+    <span className="cart-line">_________________________________</span>
+    <br></br>
+    <span className="cart-line">_________________________________</span>
     </div>
   </div>
 );
