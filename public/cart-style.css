@@ -82,6 +82,7 @@
   height: 25px;
   padding: 0px 0px 0px 1px;
   cursor: pointer;
+  border-radius: 3px;
 }
 
 #cart-cart {
@@ -123,6 +124,7 @@
   height: 25px;
   padding: 0px 0px 0px 1px;
   cursor: pointer;
+  border-radius: 3px;
 }
 
 #cart-click {

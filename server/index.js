@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const cartItem = require('../database-mongo/index.js')
+const cartItem = require('../database-mongo/index.js');
 const PORT = 4200;
 
 
@@ -25,12 +25,12 @@ app.post('/seed', (req, res) => {
     })
     .catch(err => {
       console.error(err);
-      res.status(500).send({ error: err});
+      res.status(500).send({ error: err });
     });
 });
 
 app.get('/item', (req, res) => {
-  cartItem.find(req.query.productId === undefined ? null : {price: req.query.productId })
+  cartItem.find(req.query.productId === undefined ? null : { price: req.query.productId })
     .exec()
     .then(doc => {
       console.log(doc);
