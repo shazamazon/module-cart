@@ -43,9 +43,10 @@ const Purchase = (props) => (
       <input type="checkbox"></input><span>  This is a gift.</span>
     </div>
     <div className="cart-separator">
-    <span className="cart-line">_________________________________</span>
-    <br></br>
-    <span className="cart-line">_________________________________</span>
+      <span className="cart-line">_________________________________</span>
+      <br></br>
+      <span className="cart-line">_________________________________</span>
+      <br></br>
     </div>
   </div>
 );
