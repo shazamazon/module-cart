@@ -18,13 +18,12 @@ const ListShare = (props) => (
     </div>
     <div id="cart-share">
       <span id="cart-share-link" className="cart-fakelink">Share </span>
-      <img className="cart-btn-share" src="./images/mail.png"></img>
-      <img className="cart-btn-share" src="./images/facebook.png"></img>
-      <img className="cart-btn-share" src="./images/twitter.png"></img>
-      <img className="cart-btn-share" src="./images/pintrest.png"></img>
+      <img className="cart-btn-share" src="https://cart-icons.s3.us-east-2.amazonaws.com/mail.png"></img>
+      <img className="cart-btn-share" src="https://cart-icons.s3.us-east-2.amazonaws.com/facebook.png"></img>
+      <img className="cart-btn-share" src="https://cart-icons.s3.us-east-2.amazonaws.com/twitter.png"></img>
+      <img className="cart-btn-share" src="https://cart-icons.s3.us-east-2.amazonaws.com/pintrest.png"></img>
     </div>
   </div>
-
 );
 
 export default ListShare;

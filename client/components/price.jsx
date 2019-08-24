@@ -4,7 +4,7 @@ const Price = (props) => (
   <div id="cart-top">
     <div id="cart-price">$34.99</div>
     <div id="cart-prime">
-      <img id="cart-logo" src="./images/shazam.png"></img>
+      <img id="cart-logo" src="https://cart-icons.s3.us-east-2.amazonaws.com/shazam.png"></img>
       <span id="cart-shazam">SHAZAM!</span>
       <span id="cart-oneday"> FREE Instant-Shipping</span>
     </div>
@@ -13,7 +13,7 @@ const Price = (props) => (
       <span className="cart-fakelink">Details</span>
     </div>
     <div id="cart-location">
-      <img id="cart-pin" src="./images/droppin.png"></img>
+      <img id="cart-pin" src="https://cart-icons.s3.us-east-2.amazonaws.com/droppin.png"></img>
       <span className="cart-fakelink"> Deliver to the Ministry of Magic</span>
     </div>
     <div id="cart-stock">
