@@ -19,7 +19,7 @@ const Purchase = (props) => (
     </div>
     <div id="cart-add">
       <button id="cart-btn-add">
-        <img id="cart-cart" src="./images/cart.png"></img>
+        <img id="cart-cart" src="https://cart-icons.s3.us-east-2.amazonaws.com/cart.png"></img>
         <span id="cart-add-text">Add to Cart</span>
       </button>
     </div>
@@ -35,7 +35,7 @@ const Purchase = (props) => (
     </div>
     <div id="cart-oneclick">
       <button id="cart-btn-oneclick">
-        <img id="cart-click" src="./images/oneclick.png"></img>
+        <img id="cart-click" src="https://cart-icons.s3.us-east-2.amazonaws.com/oneclick.png"></img>
         <span id="cart-click-text">Buy now with 1-Click</span>
       </button>
     </div>
