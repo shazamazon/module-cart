@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Price from './Price.jsx';
-import Purchase from './Purchase.jsx';
+import Price from './price.jsx';
+import Purchase from './purchase.jsx';
+import ListShare from './listshare.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -14,6 +15,7 @@ class App extends React.Component {
       <div>
       <Price />
       <Purchase />
+      <ListShare />
       </div>
     );
   }
