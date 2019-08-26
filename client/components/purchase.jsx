@@ -1,4 +1,5 @@
 import React from 'react';
+import App from './app.jsx';
 
 const Purchase = (props) => (
   <div id="cart-buttons">
@@ -25,7 +26,7 @@ const Purchase = (props) => (
     </div>
     <div id="cart-soldby">
       <span>Sold by </span>
-      <span className="cart-fakelink">Wizards 'R' Us</span>
+      <span className="cart-fakelink">{props.seller}</span>
       <span> and fulfilled by </span>
       <span className="cart-fakelink">Shazamazon</span>
       <span>.</span>
