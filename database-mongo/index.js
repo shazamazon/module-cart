@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/shazam-cart', {useNewUrlParser: true});
+mongoose.connect('mongodb+srv://jkconno:K1er4n1%21@cluster0-uubnq.mongodb.net/shazamazon?retryWrites=true&w=majority', { useNewUrlParser: true });
 
 const db = mongoose.connection;
 
@@ -10,8 +10,10 @@ db.once('open', () => {
 });
 
 const cartSchema = new mongoose.Schema({
-  name: mongoose.Schema.Types.ObjectId
-}, { collection: 'cart-data' });
+  _id: mongoose.Schema.Types.ObjectId,
+  ProductId: Number,
+  Price: Number
+ }, {collection: 'cart' });
 
 const cartItem = mongoose.model('cartItem', cartSchema);
 
