@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+const mongoPass = require('../config.js');
 
-mongoose.connect('mongodb+srv://jkconno:K1er4n1%21@cluster0-uubnq.mongodb.net/shazamazon?retryWrites=true&w=majority', { useNewUrlParser: true });
+mongoose.connect(`mongodb+srv://jkconno:${mongoPass}@cluster0-uubnq.mongodb.net/shazamazon?retryWrites=true&w=majority`, { useNewUrlParser: true });
 
 const db = mongoose.connection;
 
