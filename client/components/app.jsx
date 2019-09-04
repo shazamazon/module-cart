@@ -7,17 +7,17 @@ import ListShare from './listshare.jsx';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { currentItem: {"_id":"5d63f92b62a1c90237983dd7","ProductId":1,"Price":17.99,"SoldBy":"Salem"},
-                   currentPrice: 17.99,
-                   currentSeller: 'Salem'
+    this.state = { currentItem: {"_id":"5d63f92b62a1c90237983dde","ProductId":8,"Price":30.00,"SoldBy":"Ignotus Peverell"},
+                   currentPrice: 30.00,
+                   currentSeller: 'Ignotus Peverell'
                  };
   }
 
   ComponentDidMount() {
-    document.addEventListener('clickedProduct', event => {
+    window.addEventListener('clickedProduct', event => {
       let product = event.detail;
       if (product) {
-        axios.get(`/item?productId=${ProductId}`)
+        axios.get(`http://3.19.59.208/item?productId=${ProductId}`)
           .then(data => {
             console.log(data)
             this.setState({ currentItem: data[0],
