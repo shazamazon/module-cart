@@ -7,8 +7,8 @@ import ListShare from './listshare.jsx';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { currentItem: {"_id":"5d63f92b62a1c90237983dde","ProductId":8,"Price":30.00,"SoldBy":"Ignotus Peverell"},
-                   currentPrice: 30.00,
+    this.state = { currentItem: {"_id":"5d63f92b62a1c90237983dde","ProductId":8,"Price":3.39,"SoldBy":"Ignotus Peverell"},
+                   currentPrice: 3.39,
                    currentSeller: 'Ignotus Peverell'
                  };
   }
