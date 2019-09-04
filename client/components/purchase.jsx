@@ -32,7 +32,7 @@ const Purchase = (props) => (
       <span>.</span>
     </div>
     <div className="cart-separator">
-      <span className="cart-line">--------------<span className="cart-oneclick"> or 1-Click Checkout </span>--------------</span>
+      <span className="cart-click-line">              </span><span className="cart-oneclick"> or 1-Click Checkout </span><span className="cart-click-line">              </span>
     </div>
     <div id="cart-oneclick">
       <button id="cart-btn-oneclick">
@@ -44,9 +44,8 @@ const Purchase = (props) => (
       <input type="checkbox"></input><span>  This is a gift.</span>
     </div>
     <div className="cart-separator">
-      <span className="cart-line">_________________________________</span>
-      <br></br>
-      <span className="cart-line">_________________________________</span>
+      <div className="cart-line"></div>
+      <div className="cart-line"></div>
       <br></br>
     </div>
   </div>
