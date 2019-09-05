@@ -2,8 +2,8 @@
 
 #cart-app {
   font-family: 'Ubuntu', sans-serif;;
-  width: 180px;
-  height: 650px;
+  min-width: 180px;
+  height: 100%;
   border: 1px solid lightgray;
   border-radius: 5px;
   float: left;

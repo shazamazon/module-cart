@@ -14,7 +14,7 @@ const cartSchema = new mongoose.Schema({
   _id: mongoose.Schema.Types.ObjectId,
   ProductId: Number,
   Price: Number
- }, {collection: 'cart' });
+}, {collection: 'cart' });
 
 const cartItem = mongoose.model('cartItem', cartSchema);
 
