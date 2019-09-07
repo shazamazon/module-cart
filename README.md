@@ -39,7 +39,7 @@ npm i
 ```sh
 npm start
 ```
-4. Navigate to http://localhost:3000 in your browser.
+4. Navigate to http://localhost:4200 in your browser.
 
 ## Requirements
 
