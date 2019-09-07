@@ -1,6 +1,11 @@
 import React from 'react';
 import App from './app.jsx';
 
+const cartButton = () => {
+  const event = new CustomEvent('addToCart');
+  window.dispatchEvent(event);
+}
+
 const Purchase = (props) => (
   <div id="cart-buttons">
     <div id="cart-quantity">
@@ -19,7 +24,7 @@ const Purchase = (props) => (
       </select>
     </div>
     <div id="cart-add">
-      <button id="cart-btn-add">
+      <button id="cart-btn-add" onClick={() => cartButton()}>
         <img id="cart-cart" src="https://cart-icons.s3.us-east-2.amazonaws.com/cart.png"></img>
         <span id="cart-add-text">Add to Cart</span>
       </button>
@@ -35,7 +40,7 @@ const Purchase = (props) => (
       <span className="cart-click-line">              </span><span className="cart-oneclick"> or 1-Click Checkout </span><span className="cart-click-line">              </span>
     </div>
     <div id="cart-oneclick">
-      <button id="cart-btn-oneclick">
+      <button id="cart-btn-oneclick" onClick={() => props.openCloseModal(true)}>
         <img id="cart-click" src="https://cart-icons.s3.us-east-2.amazonaws.com/oneclick.png"></img>
         <span id="cart-click-text">Buy now with 1-Click</span>
       </button>
