@@ -1,7 +1,32 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
-
+@font-face {
+  font-family:'Amazon Ember';
+  src:url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIFont-amazonember_rg-cc7ebaa05a2cd3b02c0929ac0475a44ab30b7efa._V2_.woff2) format("woff2"),
+  url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIFont-amazonember_rg-8a9db402d8966ae93717c348b9ab0bd08703a7a7._V2_.woff) format("woff")
+  }
+  
+  @font-face {
+  font-family:'Amazon Ember';
+  font-style:italic;
+  src:url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIFont-amazonember_rgit-9cc1bb64eb270135f1adf3a4881c2ee5e7c37be5._V2_.woff2) format("woff2"),
+  url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIFont-amazonember_rgit-a4dc98d644ff2aedd41da3da462f09ffce86eafb._V2_.woff) format("woff")
+  }
+  
+  @font-face {
+  font-family:'Amazon Ember';
+  font-weight:700;
+  src:url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIFont-amazonember_bd-46b91bda68161c14e554a779643ef4957431987b._V2_.woff2) format("woff2"),
+  url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIFont-amazonember_bd-b605252f87b8b3df5ae206596dac0938fc5888bc._V2_.woff) format("woff")
+  }
+  
+  @font-face {
+  font-family:'Amazon Ember';
+  font-style:italic;font-weight:700;
+  src:url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIFont-amazonember_bdit-80ff7aba37dd1ff5a6b90233a19e3a780a96dc2f._V2_.woff2) format("woff2"),
+  url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIFont-amazonember_bdit-57598ce426a612be5a1d15eee08252668fca5e7a._V2_.woff) format("woff")
+  }
+    
 #cart-app {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Amazon Ember';
   width: 180px;
   min-width: 180px;
   height: 100%;
@@ -197,4 +222,127 @@
   color: lightgray;
   text-decoration: line-through;
   white-space: pre-wrap;
+}
+
+#cart-modal {
+  font-family: 'Amazon Ember';
+  font-size: 10px;
+}
+
+#cart-disable {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0,0,0,.4);
+  z-index: 1;
+}
+
+#cart-expanded {
+  display: block;
+  position: absolute;
+  width: 350px;
+  height: 235px;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, .75);
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .25);
+}
+
+
+#cart-close {
+  display: inline-block;
+  margin-left: 275px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+
+#cart-close img {
+  padding-top: 7px;
+  width: 10px;
+  height: 10px;
+}
+
+#cart-buy-title {
+  background-color: #f2f2f2;
+  color: black;
+  height: 25px;
+  width: 100%;
+  border-bottom: 1px solid #c5c5c5;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+#cart-buy-title-text {
+  display: inline-block;
+  vertical-align: middle;
+  height: 10px;
+  padding-left: 10px;
+  padding-bottom: 7px;
+}
+
+.cart-buy-lefttext {
+  display: inline-block;
+  color: #005fc7;
+  height: 10px;
+  width: 100px;
+  padding-left: 10px;
+  padding-top: 14px;
+}
+
+.cart-buy-centertext {
+  display: inline-block;
+  height: 10px;
+}
+
+#cart-buy-price {
+  display: inline-block;
+  height: 10px;
+  color: #c20000;
+}
+
+#cart-buy-shipto {
+  border-bottom: 1px solid #c5c5c5;
+  height: 40px;
+}
+
+#cart-buy-paywith {
+  border-bottom: 1px solid #c5c5c5;
+  height: 40px;
+}
+
+#cart-buy-getby {
+  border-bottom: 1px solid #c5c5c5;
+  height: 40px;
+}
+
+#cart-buy-total {
+  border-bottom: 1px solid #c5c5c5;
+  height: 40px;
+}
+
+#cart-buy-order {
+  height: 44px;
+  background-color: #f2f2f2;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+#cart-buy-orderBtn {
+  font-family: 'Amazon Ember';
+  float: right;
+  height: 25px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 3px;
+  background: linear-gradient(#fade92, #f8c418);
+  border-bottom: 1px solid #886b11;
+  border-right: 1px solid #a17f13;
 }
