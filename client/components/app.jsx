@@ -9,9 +9,9 @@ import axios from 'axios';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { currentItem: {"_id":"5d63f92b62a1c90237983dde","ProductId":8,"Price":3.39,"SoldBy":"Ignotus Peverell"},
-                   currentPrice: 3.39,
-                   currentSeller: 'Ignotus Peverell',
+    this.state = { currentItem: [{"_id":"5d63f92b62a1c90237983dfb","ProductId":38,"Price":14.95,"SoldBy":"Walden Macnair"}],
+                   currentPrice: 14.95,
+                   currentSeller: 'Walden Macnair',
                    buyNow: false
                  };
   }

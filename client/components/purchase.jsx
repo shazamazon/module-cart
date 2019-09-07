@@ -2,6 +2,7 @@ import React from 'react';
 import App from './app.jsx';
 
 const cartButton = () => {
+  console.log('hello')
   const event = new CustomEvent('addToCart');
   window.dispatchEvent(event);
 }
