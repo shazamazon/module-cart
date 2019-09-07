@@ -39,7 +39,7 @@ const Price = (props) => {
         </div>
         <div id="cart-location">
           <img id="cart-pin" src="https://cart-icons.s3.us-east-2.amazonaws.com/droppin.png"></img>
-          <span> </span><span className="cart-fakelink">Deliver to the Ministry of Magic</span>
+          <span> </span><span className="cart-fakelink">Deliver to Austin, TX 78744</span>
         </div>
         <div id="cart-stock">
           <span >In Stock.</span>
