@@ -1,16 +1,17 @@
 import React from 'react';
 import App from './app.jsx';
 
-const cartButton = () => {
-  console.log('hello')
-  const event = new CustomEvent('addToCart');
-  window.dispatchEvent(event);
-}
 
-const Purchase = (props) => (
+const Purchase = (props) => {
+
+  const changeValue = (event) => {
+    props.changeQuantity(event.target.value);
+  }
+
+  return (
   <div id="cart-buttons">
     <div id="cart-quantity">
-      <select>
+      <select onChange={changeValue} value={props.select}>
         <option value="" disabled selected>Qty: 1</option>
         <option value="1">1</option>
         <option value="2">2</option>
@@ -25,7 +26,7 @@ const Purchase = (props) => (
       </select>
     </div>
     <div id="cart-add">
-      <button id="cart-btn-add" onClick={() => cartButton()}>
+      <button id="cart-btn-add" onClick={() => props.cartSubmit(props.quantity)}>
         <img id="cart-cart" src="https://cart-icons.s3.us-east-2.amazonaws.com/cart.png"></img>
         <span id="cart-add-text">Add to Cart</span>
       </button>
@@ -55,6 +56,7 @@ const Purchase = (props) => (
       <br></br>
     </div>
   </div>
-);
+  )
+}
 
 export default Purchase;

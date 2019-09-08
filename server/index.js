@@ -1,6 +1,5 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
 const { cartItem } = require('../database-mongo/index.js');
 const PORT = 4200;
 
