@@ -12,7 +12,7 @@ class App extends React.Component {
     this.state = { currentItem: [{"_id":"5d63f92b62a1c90237983dfb","ProductId":38,"Price":14.95,"SoldBy":"Walden Macnair"}],
                    currentPrice: 14.95,
                    currentSeller: 'Walden Macnair',
-                   quantity: 0,
+                   quantity: 1,
                    select: '',
                    buyNow: false
                  };
@@ -52,10 +52,9 @@ class App extends React.Component {
   }
 
   cartSubmit(quantity) {
-    console.log(quantity)
     const event = new CustomEvent('addToCart', { detail: quantity });
     window.dispatchEvent(event);
-    this.setState({ quantity: 0,
+    this.setState({ quantity: 1,
                     select: '' });
   }
 
